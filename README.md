@@ -65,6 +65,7 @@ The initial table displays the summary of the scanned dependencies will be displ
 •	The current and latest version of the dependency. 
 •	Suggestion on whether the dependency is outdated or up to date.
 
+![Screenshot](dependency_scanning_report_1.png)
 
 The next table will include the details regarding inadequate supply chain security (M2) which will primarily include details on the vulnerabilities of the dependencies used. It will specifically include details on:
 •	Name of the Dependency
@@ -75,6 +76,8 @@ The next table will include the details regarding inadequate supply chain securi
 •	URL
 •	Description
 
+![Screenshot](dependency_scanning_report_2.png)
+
 ### 5.2 CUSTOM SCANNING REPORT
 
 In this scan the table displays the details regarding identified vulnerabilities related to OWASP mobile top 10 will be included in the application. The tabular structure and the details included in it are all same for M1, M3, M4, M6, M8, M9 and M10
@@ -82,7 +85,10 @@ In this scan the table displays the details regarding identified vulnerabilities
 •	Issue: The identified issue and the line number.
 •	Mitigation: Details related to mitigating the issue.
 
+![Screenshot](custom_scanning_report.png)
+
 ### 5.3 FULL SCANNING REPORT
 
 This report generated will include both the details on the dependency scan and custom scan.
 
+![Screenshot](full_scanning_report.png)
