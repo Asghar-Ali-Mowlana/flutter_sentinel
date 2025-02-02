@@ -20,23 +20,23 @@ There are three types of scanning that this tool can perform:
 ### 3.1 DEPENDENCY SCANNING
 
 In this type of scanning all the dependencies both direct and transitive in the pubspec.lock file will be scanned for any latest versions available and any already reported vulnerabilities from the below databases:
-•	OSV (Open Source Vulnerability)
-•	NVD (National Vulnerability Database)
-•	GitHub Adversary Database.
+1. OSV (Open Source Vulnerability)
+2. NVD (National Vulnerability Database)
+3. GitHub Adversary Database.
 
 ### 3.2 CUSTOM SCANNING
 
 In this scan all the dart files in the lib directory and its sub directories will be scanned for the OWASP Mobile Top 10 issue:
-•	M1: Improper Credential Usage
-•	M2: Inadequate Supply Chain Security
-•	M3: Insecure Authentication/Authorization
-•	M4: Insufficient Input/Output Validation
-•	M5: Insecure Communication
-•	M6: Inadequate Privacy Controls
-•	M7: Insufficient Binary Protections
-•	M8: Security Misconfiguration
-•	M9: Insecure Data Storage
-•	M10: Insufficient Cryptography
+1. M1: Improper Credential Usage
+2. M2: Inadequate Supply Chain Security
+3. M3: Insecure Authentication/Authorization
+4. M4: Insufficient Input/Output Validation
+5. M5: Insecure Communication
+6. M6: Inadequate Privacy Controls
+7. M7: Insufficient Binary Protections
+8. M8: Security Misconfiguration
+9. M9: Insecure Data Storage
+10. M10: Insufficient Cryptography
 
 ### 3.3 FULL SCANNING
 
@@ -61,29 +61,29 @@ Given below are example outcomes of each type of scan and the details included i
 ### 5.1 DEPENDENCY SCANNING REPORT
 
 The initial table displays the summary of the scanned dependencies will be displayed in a tabular format. The summary will include details related to: 
-•	Dependency types on whether the particular dependency is a direct or indirect dependency.
-•	The current and latest version of the dependency. 
-•	Suggestion on whether the dependency is outdated or up to date.
+1. Dependency types on whether the particular dependency is a direct or indirect dependency.
+2. The current and latest version of the dependency. 
+3. Suggestion on whether the dependency is outdated or up to date.
 
 ![Screenshot](dependency_scanning_report_1.png)
 
 The next table will include the details regarding inadequate supply chain security (M2) which will primarily include details on the vulnerabilities of the dependencies used. It will specifically include details on:
-•	Name of the Dependency
-•	GHSA (GitHub Security Advisory) / CVE (Common Vulnerabilities and Exposures) ID
-•	Vulnerability Database
-•	Severity
-•	Affected Version Range
-•	URL
-•	Description
+1. Name of the Dependency
+2. GHSA (GitHub Security Advisory) / CVE (Common Vulnerabilities and Exposures) ID
+3. Vulnerability Database
+4. Severity
+5. Affected Version Range
+6. URL
+7. Description
 
 ![Screenshot](dependency_scanning_report_2.png)
 
 ### 5.2 CUSTOM SCANNING REPORT
 
 In this scan the table displays the details regarding identified vulnerabilities related to OWASP mobile top 10 will be included in the application. The tabular structure and the details included in it are all same for M1, M3, M4, M6, M8, M9 and M10
-•	File: The name and location of the file.
-•	Issue: The identified issue and the line number.
-•	Mitigation: Details related to mitigating the issue.
+1. File: The name and location of the file.
+2. Issue: The identified issue and the line number.
+3. Mitigation: Details related to mitigating the issue.
 
 ![Screenshot](custom_scanning_report.png)
 
